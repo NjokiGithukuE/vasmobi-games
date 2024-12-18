@@ -9,6 +9,16 @@
   text-align: center;
 }
 
+:root {
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: light;
+  }
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
