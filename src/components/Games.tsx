@@ -25,19 +25,19 @@ export const GamesSection: React.FC = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-4">
+    <div className="mx-auto px-4 py-4 overflow-hidden w-full max-w-full">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
         Our Games
       </h2>
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
         {games.map((game) => (
           <Card
             key={game.name}
             className={`
-              ${game.bgColor} 
-              hover:shadow-xl transition-all duration-300 
-              text-center overflow-hidden
-            `}
+          ${game.bgColor} 
+          hover:shadow-xl transition-all duration-300 
+          text-center overflow-hidden
+        `}
           >
             <CardContent className="p-0">
               <div className="relative">

@@ -33,6 +33,7 @@ export const HeroSection: React.FC = () => {
           src="/hero-design.jpg"
           alt="VasMobile Games"
           className="w-full h-96 object-cover rounded-lg shadow-lg"
+          loading="lazy"
         />
       </div>
     </div>
