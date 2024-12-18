@@ -19,7 +19,7 @@ export const GamesSection: React.FC = () => {
     {
       name: "Rocket Mania",
       description: "Coming Soon",
-      image: "/rocket2.jpg",
+      image: "/rocket2-removebg-preview.png",
       bgColor: "bg-purple-50",
     },
   ];

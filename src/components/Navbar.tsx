@@ -130,7 +130,7 @@ export const VerticalNavbar: React.FC<VerticalNavbarProps> = ({
               <a
                 key={index}
                 href={item.href}
-                className="flex items-center p-3 hover:bg-orange-700 rounded hover:text-white text-white"
+                className="flex items-center p-3 hover:bg-orange-700 rounded text-white"
               >
                 <item.icon className="h-5 w-5 text-white" />
                 <span className="ml-4">{item.label}</span>

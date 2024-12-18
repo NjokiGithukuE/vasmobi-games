@@ -23,7 +23,7 @@ export const HeroSection: React.FC = () => {
             size="lg"
             className="text-orange-500 border-orange-500 hover:bg-orange-100"
           >
-            Learn More
+            Cash Out
           </Button>
         </div>
       </div>
