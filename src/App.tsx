@@ -5,6 +5,7 @@ import { GamesSection } from "./components/Games";
 import { PricingSection } from "./components/Pricing";
 import { Footer } from "./components/Footer";
 import { ThemeProvider } from "./components/theme-provider";
+import { ModeToggle } from "./components/mode-toggle";
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const App: React.FC = () => {
         }`}
       >
         <div className="max-w-full w-full overflow-x-hidden">
+          <ModeToggle />
           <HeroSection />
           <GamesSection />
           <PricingSection />
