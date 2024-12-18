@@ -4,6 +4,7 @@ import { HeroSection } from "./components/Hero";
 import { GamesSection } from "./components/Games";
 import { PricingSection } from "./components/Pricing";
 import { Footer } from "./components/Footer";
+import { ThemeProvider } from "./components/theme-provider";
 
 const App: React.FC = () => {
   useEffect(() => {
@@ -17,7 +18,8 @@ const App: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen overflow-x-hidden max-w-full w-full">
+    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+      <div className="flex flex-col lg:flex-row min-h-screen overflow-x-hidden max-w-full w-full">
       <VerticalNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
 
       <main
@@ -33,6 +35,8 @@ const App: React.FC = () => {
         </div>
       </main>
     </div>
+    </ThemeProvider>
+    
   );
 };
 
