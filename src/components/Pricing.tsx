@@ -6,13 +6,13 @@ export const PricingSection: React.FC = () => {
   const pricingPlans = [
     {
       name: "Daily",
-      price: 35,
+      price: 30,
       currency: "Ksh",
       features: ["Play any one game", "Play one time", "Daily Refresh"],
     },
     {
       name: "Weekly",
-      price: 200,
+      price: 180,
       currency: "Ksh",
       features: [
         "Play any game once for seven days",
