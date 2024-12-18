@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { VerticalNavbar } from "./components/Navbar";
 import { HeroSection } from "./components/Hero";
 import { GamesSection } from "./components/Games";
@@ -6,6 +6,14 @@ import { PricingSection } from "./components/Pricing";
 import { Footer } from "./components/Footer";
 
 const App: React.FC = () => {
+  useEffect(() => {
+    // Remove dark class
+    document.documentElement.classList.remove('dark');
+    
+    // Prevent system dark mode
+    document.documentElement.style.colorScheme = 'light';
+  }, []);
+
   const [isOpen, setIsOpen] = useState(false);
 
   return (
