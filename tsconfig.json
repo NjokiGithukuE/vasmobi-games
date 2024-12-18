@@ -1,0 +1,19 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ], 
+  "compilerOptions": {
+    "paths": {
+        "@/*": ["./src/*"]
+    },
+    "module": "commonjs", // Ensures support for __dirname
+    "target": "esnext",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node"
+}
+}
