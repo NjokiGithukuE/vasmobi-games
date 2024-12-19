@@ -120,7 +120,7 @@ export const VerticalNavbar: React.FC<VerticalNavbarProps> = ({
             <div className="text-lg font-bold">VasMobi Games</div>
             <button
               onClick={() => setIsMobileOpen(false)}
-              className="text-orange-500 hover:text-orange-700 focus:outline-none"
+              className="text-white hover:text-white focus:outline-none"
             >
               Close
             </button>
