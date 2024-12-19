@@ -54,7 +54,7 @@ export const Games: React.FC = () => {
                 <img
                   src={game.image}
                   alt={game.name}
-                  className="w-full h-48 object-scale-down max-w-full"
+                  className="w-full h-48 object-cover max-w-full"
                 />
               </div>
               <div className="p-6">
