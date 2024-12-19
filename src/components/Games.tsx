@@ -7,7 +7,7 @@ export const Games: React.FC = () => {
     {
       name: "Hoops",
       description: "Basketball shooting challenge",
-      image: "/hoops-logo.png",
+      image: "/hoops2.png",
       bgColor: "bg-blue-50",
       btnDescription: "Play Now",
       imgCover: "object-contain",
