@@ -1,26 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { VerticalNavbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { Games } from "./components/Games";
 import { Pricing } from "./components/Pricing";
 import { Footer } from "./components/Footer";
-import { ThemeProvider } from "./components/theme-provider";
 import { ModeToggle } from "./components/mode-toggle";
 
 const App: React.FC = () => {
-  useEffect(() => {
-    // Remove dark class
-    document.documentElement.classList.remove('dark');
-    
-    // Prevent system dark mode
-    document.documentElement.style.colorScheme = 'light';
-  }, []);
-
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-      <div className="flex flex-col lg:flex-row min-h-screen overflow-x-hidden max-w-full w-full">
+    <div className="flex flex-col lg:flex-row min-h-screen overflow-x-hidden max-w-full w-full">
       <VerticalNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
 
       <main
@@ -37,8 +27,6 @@ const App: React.FC = () => {
         </div>
       </main>
     </div>
-    </ThemeProvider>
-    
   );
 };
 
