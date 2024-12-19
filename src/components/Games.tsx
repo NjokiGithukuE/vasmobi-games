@@ -10,13 +10,15 @@ export const Games: React.FC = () => {
       image: "/hoops-logo.png",
       bgColor: "bg-blue-50",
       btnDescription: "Play Now",
+      imgCover: "object-contain"
     },
     {
       name: "Brain Game",
       description: "Test your mental skills",
-      image: "/brain-game-logo.png",
+      image: "/brain-game-removebg-preview.png",
       bgColor: "bg-blue-50",
       btnDescription: "Play Now",
+      imgCover: "object-cover"
     },
     {
       name: "Rocket Mania",
@@ -31,6 +33,7 @@ export const Games: React.FC = () => {
       image: "/checkers2.jpg", 
       bgColor: "bg-blue-50", 
       btnDescription: "Coming Soon",
+      imgCover: "object-cover"
     },
   ];
 
@@ -54,7 +57,7 @@ export const Games: React.FC = () => {
                 <img
                   src={game.image}
                   alt={game.name}
-                  className="w-full h-48 object-cover max-w-full"
+                  className="w-full h-48 {games.imgCover} max-w-full"
                 />
               </div>
               <div className="p-6">
