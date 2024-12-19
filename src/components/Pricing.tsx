@@ -2,7 +2,7 @@ import { Check } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
-export const PricingSection: React.FC = () => {
+export const Pricing: React.FC = () => {
   const pricingPlans = [
     {
       name: "Daily",

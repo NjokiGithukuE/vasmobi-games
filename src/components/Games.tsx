@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-export const GamesSection: React.FC = () => {
+export const Games: React.FC = () => {
   const games = [
     {
       name: "Hoops",

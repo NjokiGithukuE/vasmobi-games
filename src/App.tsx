@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { VerticalNavbar } from "./components/Navbar";
-import { HeroSection } from "./components/Hero";
-import { GamesSection } from "./components/Games";
-import { PricingSection } from "./components/Pricing";
+import { Hero } from "./components/Hero";
+import { Games } from "./components/Games";
+import { Pricing } from "./components/Pricing";
 import { Footer } from "./components/Footer";
 import { ThemeProvider } from "./components/theme-provider";
 import { ModeToggle } from "./components/mode-toggle";
@@ -30,9 +30,9 @@ const App: React.FC = () => {
       >
         <div className="max-w-full w-full overflow-x-hidden">
           <ModeToggle />
-          <HeroSection />
-          <GamesSection />
-          <PricingSection />
+          <Hero />
+          <Games />
+          <Pricing />
           <Footer />
         </div>
       </main>

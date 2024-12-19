@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
 
-export const HeroSection: React.FC = () => {
+export const Hero: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-4 md:py-8 flex flex-col md:flex-row items-center">
       <div className="w-full md:w-1/2 pr-6 md:pr-8">
