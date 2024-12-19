@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
                 variant="outline"
                 className="
                   border-gray-600 
-                  text-gray-300 
+                  text-gray-900 
                   hover:border-orange-500 
                   hover:text-orange-500 
                   flex items-center 
@@ -97,7 +97,7 @@ export const Footer: React.FC = () => {
                 variant="outline"
                 className="
                   border-gray-600 
-                  text-gray-300 
+                  text-gray-900 
                   hover:border-orange-500 
                   hover:text-orange-500 
                   flex items-center 
@@ -114,7 +114,7 @@ export const Footer: React.FC = () => {
                 variant="outline"
                 className="
                   border-gray-600 
-                  text-gray-300 
+                  text-gray-900 
                   hover:border-orange-500 
                   hover:text-orange-500 
                   flex items-center 
