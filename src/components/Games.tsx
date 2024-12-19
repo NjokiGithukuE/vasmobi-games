@@ -9,27 +9,37 @@ export const Games: React.FC = () => {
       description: "Basketball shooting challenge",
       image: "/hoops-logo.png",
       bgColor: "bg-blue-50",
+      btnDescription: "Play Now",
     },
     {
       name: "Brain Game",
       description: "Test your mental skills",
       image: "/brain-game-logo.png",
-      bgColor: "bg-green-50",
+      bgColor: "bg-blue-50",
+      btnDescription: "Play Now",
     },
     {
       name: "Rocket Mania",
-      description: "Coming Soon",
+      description: "Shoot rockets in a galaxy",
       image: "/rocket2-removebg-preview.png",
-      bgColor: "bg-purple-50",
+      bgColor: "bg-blue-50",
+      btnDescription: "Coming Soon",
+    },
+    {
+      name: "Checkers", 
+      description: "Checkmate", 
+      image: "/checkers2.jpg", 
+      bgColor: "bg-blue-50", 
+      btnDescription: "Coming Soon",
     },
   ];
 
   return (
     <div className="mx-auto px-4 py-4 overflow-hidden w-full max-w-full">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-        Our Games
+      <h2 className="text-3xl md:text-4xl font-bold text-orange-500 text-center mb-12">
+      🎮 Playground
       </h2>
-      <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid sm:grid-cols-1 md:grid-cols-4 gap-8">
         {games.map((game) => (
           <Card
             key={game.name}
@@ -44,13 +54,13 @@ export const Games: React.FC = () => {
                 <img
                   src={game.image}
                   alt={game.name}
-                  className="w-full h-48 object-contain max-w-full"
+                  className="w-full h-48 object-scale-down max-w-full"
                 />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{game.name}</h3>
                 <p className="text-gray-600 mb-4">{game.description}</p>
-                <Button variant="outline">Play Now</Button>
+                <Button variant="outline">{game.btnDescription}</Button>
               </div>
             </CardContent>
           </Card>

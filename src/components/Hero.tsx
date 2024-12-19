@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 export const Hero: React.FC = () => {
   return (
-    <div className="container mx-auto px-4 py-4 md:py-8 flex flex-col md:flex-row items-center">
+    <div className="container mx-auto px-4 py-4 md:py-8 flex flex-col md:flex-row items-center bg-[#E3F1F2]">
       <div className="w-full md:w-1/2 pr-6 md:pr-8">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
           Welcome to <span className="text-orange-500">VasMobi Games</span>
@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
         <img
           src="/hero-design.jpg"
           alt="VasMobile Games"
-          className="w-full h-96 object-cover rounded-lg shadow-lg"
+          className="w-full h-96 object-cover"
           loading="lazy"
         />
       </div>

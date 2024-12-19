@@ -4,7 +4,8 @@ import { Hero } from "./components/Hero";
 import { Games } from "./components/Games";
 import { Pricing } from "./components/Pricing";
 import { Footer } from "./components/Footer";
-import { ModeToggle } from "./components/mode-toggle";
+import { Topbar } from "./components/Topbar";
+// import { ModeToggle } from "./components/mode-toggle";
 
 const App: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,8 @@ const App: React.FC = () => {
         }`}
       >
         <div className="max-w-full w-full overflow-x-hidden">
-          <ModeToggle />
+          {/* <ModeToggle /> */}
+          <Topbar />
           <Hero />
           <Games />
           <Pricing />
