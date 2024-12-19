@@ -10,15 +10,15 @@ export const Games: React.FC = () => {
       image: "/hoops-logo.png",
       bgColor: "bg-blue-50",
       btnDescription: "Play Now",
-      imgCover: "object-contain"
+      imgCover: "object-contain",
     },
     {
       name: "Brain Game",
       description: "Test your mental skills",
-      image: "/brain-game-removebg-preview.png",
+      image: "/brain-game2.jpg",
       bgColor: "bg-blue-50",
       btnDescription: "Play Now",
-      imgCover: "object-cover"
+      imgCover: "object-cover",
     },
     {
       name: "Rocket Mania",
@@ -26,21 +26,22 @@ export const Games: React.FC = () => {
       image: "/rocket2-removebg-preview.png",
       bgColor: "bg-blue-50",
       btnDescription: "Coming Soon",
+      imgCover: "object-scale-down",
     },
     {
-      name: "Checkers", 
-      description: "Checkmate", 
-      image: "/checkers2.jpg", 
-      bgColor: "bg-blue-50", 
+      name: "Checkers",
+      description: "Checkmate",
+      image: "/checkers2.jpg",
+      bgColor: "bg-blue-50",
       btnDescription: "Coming Soon",
-      imgCover: "object-cover"
+      imgCover: "object-cover",
     },
   ];
 
   return (
     <div className="mx-auto px-4 py-4 overflow-hidden w-full max-w-full">
       <h2 className="text-3xl md:text-4xl font-bold text-orange-500 text-center mb-12">
-      🎮 Playground
+        Playground
       </h2>
       <div className="grid sm:grid-cols-1 md:grid-cols-4 gap-8">
         {games.map((game) => (
@@ -57,7 +58,8 @@ export const Games: React.FC = () => {
                 <img
                   src={game.image}
                   alt={game.name}
-                  className="w-full h-48 {games.imgCover} max-w-full"
+                  className={`w-full h-48 ${game.imgCover} max-w-full`}
+                  // className="w-full h-48 {games.imgCover} max-w-full"
                 />
               </div>
               <div className="p-6">
