@@ -5,7 +5,7 @@ import { Games } from "./components/Games";
 import { Pricing } from "./components/Pricing";
 import { Footer } from "./components/Footer";
 import { Topbar } from "./components/Topbar";
-import TailwindIndicator from "./components/partials/tailwind-indicator";
+// import TailwindIndicator from "./components/partials/tailwind-indicator";
 
 const App: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ const App: React.FC = () => {
 
       <main
         className={`flex-grow transition-all duration-300 
-          ${isOpen ? "ml-48 lg:ml-16" : "ml-0"}`}
+          ${isOpen ? "ml-48 lg:ml-16" : "lg:ml-16"}`}
       >
         <div className="max-w-full w-full overflow-x-hidden">
           <Topbar />
@@ -24,7 +24,7 @@ const App: React.FC = () => {
           <Games />
           <Pricing />
           <Footer />
-          <TailwindIndicator />
+          {/* <TailwindIndicator /> */}
         </div>
       </main>
     </div>
