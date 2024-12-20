@@ -2,8 +2,8 @@ import { Button } from "./ui/button";
 
 export const Hero: React.FC = () => {
   return (
-    <div className="container mx-auto px-8 py-4 md:py-8 flex flex-col md:flex-row items-center bg-[#E3F1F2]">
-      <div className="w-full md:w-1/2 pr-6 md:pr-8">
+    <div className="px-12 py-4 md:py-8 mx-4 flex flex-col md:flex-row items-center bg-[#E3F1F2]">
+      <div className="w-full max-w-screen-lg md:w-1/2 pr-6 md:pr-8">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
           Welcome to <span className="text-orange-500">VasMobi Games</span>
         </h1>
