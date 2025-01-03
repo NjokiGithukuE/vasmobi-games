@@ -10,13 +10,14 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import SignUpPage from "@/components/pages/sign-up";
 import Home from "@/components/pages/home";
+import ComingSoon from "@/components/pages/coming-soon";
 
 const AppRoutes: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/signup" element={<SignUpPage />} />
-      {/* Add other routes here */}
+      <Route path="/coming-soon" element={<ComingSoon />} />
     </Routes>
   );
 };

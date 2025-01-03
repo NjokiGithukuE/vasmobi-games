@@ -134,7 +134,7 @@ const SignUpPage = () => {
               <div>
                 <Label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-bold text-gray-700"
                 >
                   Email address
                 </Label>
@@ -158,7 +158,7 @@ const SignUpPage = () => {
               <div>
                 <Label
                   htmlFor="password"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-bold text-gray-700"
                 >
                   Password
                 </Label>
@@ -184,7 +184,7 @@ const SignUpPage = () => {
               <div>
                 <Label
                   htmlFor="confirmPassword"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-bold text-gray-700"
                 >
                   Confirm Password
                 </Label>
