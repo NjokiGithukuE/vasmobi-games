@@ -17,7 +17,7 @@ export const Topbar: React.FC = () => {
               className="bg-orange-500 text-white hover:bg-orange-600"
               onClick={handleSignUpClick}
             >
-              Sign up
+              Sign in
             </Button>
           </div>
         </div>
